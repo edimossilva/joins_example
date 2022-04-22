@@ -10,6 +10,8 @@ class User < ApplicationRecord
 
   validates :role, presence: true, inclusion: { in: ROLES }
 
+  has_many :jobs
+
   def admin?
     role == ROLES[0]
   end

@@ -36,8 +36,8 @@ services:
       DEVISE_JWT_SECRET_KEY: 'e26a21cfca4fdf67cc4e82385ba2d6ea4fb83ad1f8f5'
       HUB_URL: http://chrome:4444/wd/hub
     tty: true
-    ports:
-      - "3000:3000"
+    # ports:
+    #   - "3000:3000"
     entrypoint: /app/scripts/entrypoint.sh
 
   chrome:
